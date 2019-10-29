@@ -1,0 +1,77 @@
+#Tic Tac Toe Game
+game_start=input('Do you want to play a new game, yes or no',)
+if game_start=='yes':
+    #Define a dictionary to print out the board:
+    a = {1:' ',2:' ',3:' ',4:' ',5:' ',6:' ',7:' ',8:' ',9:' ',10:'|',11:'--|---|--'}
+    #printing out the board:
+    print(a[7],a[10],a[8],a[10],a[9])
+    print(a[11])
+    print(a[4],a[10],a[5],a[10],a[6])
+    print(a[11])
+    print(a[1],a[10],a[2],a[10],a[3])
+    player1=input('Player1 Choose eighter x or o',)
+    if player1=='x':
+        player2='o'
+    else:
+        player2='x'
+    num=0
+    while num<10:
+        b=int(input('Player 1 Please enter a Number:',))
+        a[b]=player1
+        print(a[7],a[10],a[8],a[10],a[9])
+        print(a[11])
+        print(a[4],a[10],a[5],a[10],a[6])
+        print(a[11])
+        print(a[1],a[10],a[2],a[10],a[3])
+        num+=1
+        if [a[1],a[2],a[3]]==['x','x','x'] or [a[4],a[5],a[6]]==['x','x','x'] or [a[7],a[8],a[9]]==['x','x','x'] or [a[1],a[5],a[9]]==['x','x','x'] or [a[3],a[5],a[7]]==['x','x','x'] or [a[1],a[2],a[3]]==['o','o','o'] or  [a[4],a[5],a[6]]==['o','o','o'] or [a[7],a[8],a[9]]==['o','o','o']or [a[1],a[5],a[9]]==['o','o','o'] or [a[3],a[5],a[7]]==['o','o','o']:
+            print('Congratulations Player 1 won the game.')
+            new_game=input("Do you want to play another gmae, yes or no",)
+            if new_game=='yes':
+                num=0
+                a = {1:' ',2:' ',3:' ',4:' ',5:' ',6:' ',7:' ',8:' ',9:' ',10:'|',11:'--|---|--'}
+                #printing out the board:
+                print(a[7],a[10],a[8],a[10],a[9])
+                print(a[11])
+                print(a[4],a[10],a[5],a[10],a[6])
+                print(a[11])
+                print(a[1],a[10],a[2],a[10],a[3])
+                player1=input('Player1 Choose eighter x or o',)
+                if player1=='x':
+                    player2='o'
+                else:
+                    player2='x'
+                continue
+            else:
+                break
+        c=int(input('Player 2 Please enter a Number:',))
+        a[c]=player2
+        print(a[7],a[10],a[8],a[10],a[9])
+        print(a[11])
+        print(a[4],a[10],a[5],a[10],a[6])
+        print(a[11])
+        print(a[1],a[10],a[2],a[10],a[3])
+        num+=1
+        if [a[1],a[2],a[3]]==['x','x','x'] or [a[4],a[5],a[6]]==['x','x','x'] or [a[7],a[8],a[9]]==['x','x','x'] or [a[1],a[5],a[9]]==['x','x','x'] or [a[3],a[5],a[7]]==['x','x','x'] or [a[1],a[2],a[3]]==['o','o','o'] or  [a[4],a[5],a[6]]==['o','o','o'] or [a[7],a[8],a[9]]==['o','o','o']or [a[1],a[5],a[9]]==['o','o','o'] or [a[3],a[5],a[7]]==['o','o','o']:
+            print('Congratulations Player 2 won the game.')
+            new_game=input("Do you want to play another gmae, yes or no",)
+            if new_game=='yes':
+                num=0
+                a = {1:' ',2:' ',3:' ',4:' ',5:' ',6:' ',7:' ',8:' ',9:' ',10:'|',11:'--|---|--'}
+                #printing out the board:
+                print(a[7],a[10],a[8],a[10],a[9])
+                print(a[11])
+                print(a[4],a[10],a[5],a[10],a[6])
+                print(a[11])
+                print(a[1],a[10],a[2],a[10],a[3])
+                player1=input('Player1 Choose eighter x or o',)
+                if player1=='x':
+                    player2='o'
+                else:
+                    player2='x'
+                continue
+            else:
+                break
+        
+else:
+    print("See you next time")
