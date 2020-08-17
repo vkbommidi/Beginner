@@ -1,2 +1,2 @@
-# Beginner
-On my path to learn python
+# Python Practice Projects
+A collection of python projects I have done for practising Python.
